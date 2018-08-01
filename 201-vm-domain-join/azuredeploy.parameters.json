@@ -3,34 +3,42 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "existingVNETName": {
-      "value": "myvnet"
+      "value": "adVNET"
     },
     "existingSubnetName": {
-      "value": "subnet"
+      "value": "adSubnet"
     },
     "vmSize": {
       "value": "Standard_A2"
     },
     "domainToJoin": {
-      "value": "contoso.local"
+      "value": "jnjtest.com"
     },
     "domainUsername": {
-      "value": "azuerUser"
+      "value": "adAdministrator"
     },
     "domainPassword": {
-      "value": "P@ssword!"
+      "value": "HarshulPatel6789"
     },
     "domainJoinOptions": {
       "value": 3
     },
+    "ouPath": {
+      "reference": {
+          "keyVault": {
+              "id": "/subscriptions/00b72028-9dce-4729-9b2a-a10e92054447/resourceGroups/jnj-test-rg/providers/Microsoft.KeyVault/vaults/jnjKeyVault"
+          },
+          "secretName": "TestOU"
+      }
+    },
     "vmAdminUsername": {
-      "value": "azureUser"
+      "value": "Administrator"
     },
     "vmAdminPassword": {
-      "value": "P@ssword!"
+      "value": "HArshulPatel6789"
     },
     "dnsLabelPrefix": {
-      "value": "GEN-UNIQUE" 
+      "value": "jnjtest" 
     }
   }
 }
